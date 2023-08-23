@@ -38,7 +38,6 @@ public abstract class Plant {
         System.out.println(getName() + " has get growth per season in Spring - " + getHeight());
     }
 
-
     //protected void goSummer() {
     //      System.out.println(name + " has grown in Summer - " + height);
     //  }
