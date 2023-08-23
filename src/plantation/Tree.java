@@ -12,18 +12,9 @@ public class Tree extends Plant {
         return TREE_GROWTH_PER_SEASON;
     }
 
-    /*
-     @Override
-    protected void goSpring() {
-      height += TREE_GROWTH_PER_SEASON;
-        super.goSpring();
-    }
-    */
-
     @Override
     protected void goSummer() {
         height += TREE_GROWTH_PER_SEASON;
-        //super.goSummer();
     }
 
     @Override
