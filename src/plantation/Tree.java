@@ -7,12 +7,18 @@ public class Tree extends Plant {
         super(name, height, age);
     }
 
-    //@Override
-    //protected void goSpring() {
+    @Override
+    public int getGrowthPerSeason() {
+        return 0;
+    }
 
-    //  height += TREE_GROWTH_PER_SEASON;
-    //    super.goSpring();
-    //}
+    /*
+     @Override
+    protected void goSpring() {
+      height += TREE_GROWTH_PER_SEASON;
+        super.goSpring();
+    }
+    */
 
     @Override
     protected void goSummer() {
