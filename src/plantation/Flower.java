@@ -14,7 +14,7 @@ public class Flower extends Plant {
 
     @Override
     public void goSpring() {
-        height += FLOWER_GROWTH_PER_SEASON;
+        setHeight(getGrowthPerSeason() += 1);
         super.goSpring();
     }
 
@@ -25,7 +25,7 @@ public class Flower extends Plant {
 
     @Override
     protected void goAutumn() {
-        System.out.println(getName()e + " is being cut in Autumn");
+        System.out.println(getName() + " is being cut in Autumn");
     }
 
     @Override
