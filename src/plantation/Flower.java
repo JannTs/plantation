@@ -1,7 +1,7 @@
 package plantation;
 
 public class Flower extends Plant {
-    private static int TREE_GROW_PER_SEASON = 5;
+    private static int TREE_GROW_PER_SEASON = 2;
 
     Flower(String name, int height, int age) {
         super(name, height, age);
