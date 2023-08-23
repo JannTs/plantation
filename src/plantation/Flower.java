@@ -13,13 +13,12 @@ public class Flower extends Plant {
     }
 
     @Override
-    public void goSpring() {
-        setHeight(getHeight()+ FLOWER_GROWTH_PER_SEASON);
-        System.out.println(getName()+ " has growth per Spring " + getHeight());
-    }
-
-    @Override
     protected void goSummer() {
+        setHeight(getHeight() + getGrowthPerSeason());
+        System.out.println(getName() +
+                " - now its height is: " + getHeight() +
+                ", should grow by " + getGrowthPerSeason() +" centimeters per season "+
+                " and this instance will soon be " + getAge() + " years old");
         System.out.println(getName() + " is flowering in Summer");
     }
 

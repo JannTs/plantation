@@ -24,25 +24,27 @@ public abstract class Plant {
     }
 
     public void setHeight(int height) {
+
         this.height = height;
     }
 
     public void incrAge() {
-        this.age++;
+         this.age++;
     }
 
     public abstract int getGrowthPerSeason() ;
 
    public void goSpring() {
         incrAge();
-        System.out.println(getName() + " has get growth per season in Spring - " + getHeight());
-    }
+
+   }
 
      protected abstract void goSummer();
 
     protected abstract void goAutumn();
 
     protected void goWinter() {
+
         System.out.println(getName() + " has not grown in Winter - " + getHeight());
     }
 

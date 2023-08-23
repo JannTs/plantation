@@ -1,7 +1,7 @@
 package plantation;
 
 public class Tree extends Plant {
-    private static int TREE_GROWTH_PER_SEASON = 5;
+    private static final int TREE_GROWTH_PER_SEASON = 5;
 
     Tree(String name, int height, int age) {
         super(name, height, age);
@@ -14,8 +14,13 @@ public class Tree extends Plant {
 
     @Override
     protected void goSummer() {
-        height += TREE_GROWTH_PER_SEASON;
+        setHeight(getHeight() + getGrowthPerSeason());
+        System.out.println(getName() +
+                " - now its height is: " + getHeight() +
+                ", should grow by " + getGrowthPerSeason() +" centimeters per season "+
+                " and this instance will soon be " + getAge() + " years old");
     }
+
 
     @Override
     protected void goAutumn() {
