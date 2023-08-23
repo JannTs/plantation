@@ -9,7 +9,7 @@ public class Tree extends Plant {
 
     @Override
     public int getGrowthPerSeason() {
-        return 0;
+        return TREE_GROWTH_PER_SEASON;
     }
 
     /*
