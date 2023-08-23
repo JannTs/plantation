@@ -1,15 +1,16 @@
 package plantation;
 
 public class Flower extends Plant {
-    int flower_grow_per_season = 2;
+    private static int TREE_GROW_PER_SEASON = 5;
 
     Flower(String name, int height, int age) {
         super(name, height, age);
     }
 
     @Override
+
     protected void goSpring() {
-        height += flower_grow_per_season;
+        height += TREE_GROW_PER_SEASON;
         super.goSpring();
     }
 

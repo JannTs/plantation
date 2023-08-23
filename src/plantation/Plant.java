@@ -1,6 +1,6 @@
 package plantation;
 
-public class Plant {
+public abstract class Plant {
     String name;
     int height;
     int age;
@@ -11,23 +11,23 @@ public class Plant {
         this.age = age;
     }
 
-    void goSpring() {
+    protected void goSpring() {
         System.out.println(name + " has grown in Spring - " + height);
     }
 
-    void goSummer() {
+    protected void goSummer() {
         System.out.println(name + " has grown in Summer - " + height);
     }
 
-    void goAutumn() {
+    protected void goAutumn() {
         System.out.println(name + " has not grown in Autumn - " + height);
     }
 
-    void goWinter() {
+    protected void goWinter() {
         System.out.println(name + " has not grown in Winter - " + height);
     }
 
-    void Information() {
+    protected void plantInformation() {
         System.out.println(name + " has height " + height + " and is " + age + " years old");
     }
 }

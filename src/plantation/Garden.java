@@ -16,14 +16,17 @@ public class Garden {
         }
 
         for (Plant plant : plants) {
-            plant.Information();
+            plant.plantInformation();
         }
     }
 
     public static void main(String[] args) {
         Plant[] plants = {
-                new Tree("AppleTree", 80, 2),
-                new Flower("Rose", 50, 2)
+                new Tree("Apple tree", 80, 1),
+                new Flower("Rose", 50, 1),
+                new Flower("Rose bush", 100, 2),
+                new Tree("Cherry tree", 80, 1),
+                new Flower("Marigolds", 20, 1)
         };
 
         growPlants(plants, 5);
