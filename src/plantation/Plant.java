@@ -11,23 +11,23 @@ public class Plant {
         this.age = age;
     }
 
-    void doSpring() {
+    void goSpring() {
         System.out.println(name + " has grown in Spring - " + height);
     }
 
-    void doSummer() {
+    void goSummer() {
         System.out.println(name + " has grown in Summer - " + height);
     }
 
-    void doAutumn() {
+    void goAutumn() {
         System.out.println(name + " has not grown in Autumn - " + height);
     }
 
-    void doWinter() {
+    void goWinter() {
         System.out.println(name + " has not grown in Winter - " + height);
     }
 
-    void printInfo() {
+    void Information() {
         System.out.println(name + " has height " + height + " and is " + age + " years old");
     }
 }

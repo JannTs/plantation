@@ -8,23 +8,23 @@ public class Flower extends Plant {
     }
 
     @Override
-    protected void doSpring() {
+    protected void goSpring() {
         height += flower_grow_per_season;
-        super.doSpring();
+        super.goSpring();
     }
 
     @Override
-    protected void doSummer() {
+    protected void goSummer() {
         System.out.println(name + " is flowering in Summer");
     }
 
     @Override
-    protected void doAutumn() {
+    protected void goAutumn() {
         System.out.println(name + " is being cut in Autumn");
     }
 
     @Override
-    protected void doWinter() {
+    protected void goWinter() {
         System.out.println(name + " is not growing in Winter");
     }
 }

@@ -5,22 +5,24 @@ public class Garden {
         for (int year = 0; year < years; year++) {
             System.out.println("Year " + (year + 1) + ":");
             for (Plant plant : plants) {
-                plant.doSpring();
-                plant.doSummer();
-                plant.doAutumn();
-                plant.doWinter();
+
+                plant.goSpring();
+                plant.goSummer();
+                plant.goAutumn();
+                plant.goWinter();
+
             }
-            System.out.println("-------");
+            System.out.println("++++++++++++++++++++++++++");
         }
 
         for (Plant plant : plants) {
-            plant.printInfo();
+            plant.Information();
         }
     }
 
     public static void main(String[] args) {
         Plant[] plants = {
-                new Tree("AppleTree", 8, 2),
+                new Tree("AppleTree", 80, 2),
                 new Flower("Rose", 50, 2)
         };
 

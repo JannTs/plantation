@@ -8,24 +8,24 @@ public class Tree extends Plant {
     }
 
     @Override
-    protected void doSpring() {
+    protected void goSpring() {
         height += tree_grow_per_season;
-        super.doSpring();
+        super.goSpring();
     }
 
     @Override
-    protected void doSummer() {
+    protected void goSummer() {
         height += tree_grow_per_season;
-        super.doSummer();
+        super.goSummer();
     }
 
     @Override
-    protected void doAutumn() {
+    protected void goAutumn() {
         System.out.println(name + " is not growing in Autumn");
     }
 
     @Override
-    protected void doWinter() {
+    protected void goWinter() {
         System.out.println(name + " is not growing in Winter");
     }
 }
