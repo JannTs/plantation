@@ -1,22 +1,22 @@
 package plantation;
 
 public class Tree extends Plant {
-    private static int TREE_GROW_PER_SEASON = 5;
+    private static int TREE_GROWTH_PER_SEASON = 5;
 
     Tree(String name, int height, int age) {
         super(name, height, age);
     }
 
-    @Override
-    protected void goSpring() {
+    //@Override
+    //protected void goSpring() {
 
-        height += TREE_GROW_PER_SEASON;
-        super.goSpring();
-    }
+    //  height += TREE_GROWTH_PER_SEASON;
+    //    super.goSpring();
+    //}
 
     @Override
     protected void goSummer() {
-        height += TREE_GROW_PER_SEASON;
+        height += TREE_GROWTH_PER_SEASON;
         super.goSummer();
     }
 
