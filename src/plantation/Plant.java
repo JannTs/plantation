@@ -27,7 +27,15 @@ public abstract class Plant {
         this.height = height;
     }
 
-    protected void goSpring() {
+    public void incrAge() {
+        this.age++;
+    }
+
+
+
+
+    public void goSpring() {
+        incrAge();
         System.out.println(name + " has grown in Spring - " + height);
     }
 

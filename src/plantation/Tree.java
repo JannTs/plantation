@@ -9,6 +9,7 @@ public class Tree extends Plant {
 
     @Override
     protected void goSpring() {
+
         height += TREE_GROW_PER_SEASON;
         super.goSpring();
     }
