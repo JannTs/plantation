@@ -42,9 +42,7 @@ public abstract class Plant {
     //      System.out.println(name + " has grown in Summer - " + height);
     //  }
     protected abstract void goSummer();
-    // protected void goAutumn() {
-      //  System.out.println(name + " has not grown in Autumn - " + height);
-    //}
+
     protected abstract void goAutumn();
 
     protected void goWinter() {

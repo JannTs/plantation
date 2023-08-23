@@ -14,8 +14,9 @@ public class Flower extends Plant {
 
     @Override
     public void goSpring() {
-        setHeight(getGrowthPerSeason() += 1);
-        super.goSpring();
+        setHeight(getHeight()+ getGrowthPerSeason());
+        System.out.println(getName()+ " has growth per Spring " + getHeight());
+        //super.goSpring();
     }
 
     @Override
