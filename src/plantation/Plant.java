@@ -31,24 +31,25 @@ public abstract class Plant {
         this.age++;
     }
 
+    public abstract int getGrowthPerSeason();
 
-
-
-    public void goSpring() {
+   public void goSpring() {
         incrAge();
-        System.out.println(name + " has grown in Spring - " + height);
+        System.out.println(getName() + " has get growth per season in Spring - " + getHeight());
     }
 
-    protected void goSummer() {
-        System.out.println(name + " has grown in Summer - " + height);
-    }
 
-    protected void goAutumn() {
-        System.out.println(name + " has not grown in Autumn - " + height);
-    }
+    //protected void goSummer() {
+    //      System.out.println(name + " has grown in Summer - " + height);
+    //  }
+    protected abstract void goSummer();
+    // protected void goAutumn() {
+      //  System.out.println(name + " has not grown in Autumn - " + height);
+    //}
+    protected abstract void goAutumn();
 
     protected void goWinter() {
-        System.out.println(name + " has not grown in Winter - " + height);
+        System.out.println(getName() + " has not grown in Winter - " + getHeight());
     }
 
     protected void plantInformation() {
