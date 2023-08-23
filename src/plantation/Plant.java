@@ -52,7 +52,7 @@ public abstract class Plant {
     }
 
     protected void plantInformation() {
-        System.out.println(name + " has height " + height + " and is " + age + " years old");
+        System.out.println(getName() + " has height " + getHeight() + " and is " + getAge() + " years old");
     }
 }
 
