@@ -16,7 +16,7 @@ public class Garden {
         }
 
         for (Plant plant : plants) {
-            plant.plantInformation();
+            plant.plantInformation() ;
         }
     }
 

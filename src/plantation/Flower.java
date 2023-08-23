@@ -9,7 +9,7 @@ public class Flower extends Plant {
 
     @Override
     public int getGrowthPerSeason() {
-        return FLOWER_GROWTH_PER_SEASON;
+        return FLOWER_GROWTH_PER_SEASON ;
     }
 
     @Override
