@@ -1,7 +1,7 @@
 package plantation;
 
 public class Flower extends Plant {
-    private static int TREE_GROW_PER_SEASON = 2;
+    private static int FLOWER_GROW_PER_SEASON = 2;
 
     Flower(String name, int height, int age) {
         super(name, height, age);
@@ -10,7 +10,7 @@ public class Flower extends Plant {
     @Override
 
     protected void goSpring() {
-        height += TREE_GROW_PER_SEASON;
+        height += FLOWER_GROW_PER_SEASON;
         super.goSpring();
     }
 
@@ -26,7 +26,7 @@ public class Flower extends Plant {
 
     @Override
     protected void goWinter() {
-        System.out.println(name + " is not growing in Winter");
+        System.out.println(name + " is NOT growing in Winter");
     }
 }
 

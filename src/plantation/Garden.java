@@ -12,7 +12,7 @@ public class Garden {
                 plant.goWinter();
 
             }
-            System.out.println("++++++++++++++++++++++++++");
+            System.out.println("++++++++++ One year cycle ++++++++++++++++");
         }
 
         for (Plant plant : plants) {
