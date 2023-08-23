@@ -1,7 +1,7 @@
 package plantation;
 
 public abstract class Plant {
-    private String name;
+    private final String name;
     int height;
     private int age;
 

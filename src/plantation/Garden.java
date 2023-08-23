@@ -22,9 +22,6 @@ public class Garden {
 
     public static void main(String[] args) {
         Plant[] plants = {
-                new Tree("Apple tree", 80, 1),
-                new Flower("Rose", 50, 1),
-                new Flower("Rose bush", 100, 2),
                 new Tree("Cherry tree", 80, 1),
                 new Flower("Marigolds", 20, 1)
         };
